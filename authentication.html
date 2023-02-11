@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title> USER AUTHENTICATION </title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    }
+.col-md-4{
+    margin-top:200px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    padding:15px;
+    border-radius: 10px;
+}
+.btn-btn-primary{
+    background-color:mediumslateblue;
+    padding:6px;
+    border-radius:5px;
+}
+.btn-btn-primary:hover{
+    background-color:hotpink;
+}
+
+</style>
+<body>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h1 class="text-center">User Authentication</h1><br>
+            <form onsubmit="validate()">
+                <input type="text" placeholder="User Name" class="form-control" id="User Name"><br>
+                <input type="password" placeholder="Password" class="form-control" id="Password"><br>
+                <center><input type="submit" value="login" class="btn-btn-primary"></center>
+
+            </form>
+
+        </div>
+</div>   
+</body>
+</html>
+
+<script>
+function validate(){
+
+    var username=document.getElementById("User Name").value
+    var password=document.getElementById("Password").value
+
+    if(username== "revathi" && password== 12345)
+    {
+        alert('login sucessfully!')
+    }
+    else{
+        alert('invalid login?!')
+    }
+ }
+
+</script>
